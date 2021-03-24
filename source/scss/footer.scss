@@ -1,0 +1,13 @@
+.footer {
+  background-color: green;
+  &-menu {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    &__item {
+      background-color: orange;
+      color: black
+    }
+  }
+}

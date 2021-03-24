@@ -1,0 +1,34 @@
+{
+  "name": "cat-energy-22",
+  "private": true,
+  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "^9.5.1",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "stylelint": "13.12.0",
+    "stylelint-config-htmlacademy": "0.1.4"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint .",
+    "test": "npm run editorconfig"
+  },
+  "editorconfig-cli": [
+    "*.json",
+    "source/*.html"
+  ],
+  "engines": {
+    "node": "12.18.2"
+  }
+}
