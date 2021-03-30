@@ -1,7 +1,7 @@
 .footer {
-  background-color: green;
+  background-color: gray;
   &-menu {
-    background-color: blue;
+    background-color: var(--basic-green);
     color: white;
     display: flex;
     justify-content: space-around;

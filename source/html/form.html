@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html  lang="ru" class="page">
+  @@include("html_components/head.html", {
+    "page": "Кэт энерджи: подбор программы"
+  })
+  <body class="page__body">
+    @@include("html_components/header.html", {
+      "index": 'href="index.html"',
+      "catalog": 'href="catalog.html"',
+      "form": ''
+    })
+
+    <main class="page-main">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <section class="page-main__questionnaire questionnaire">
+        <h2 class="visually-hidden">Анкета</h2>
+        <p class="questionnaire__text">
+          Заполните анкету, и мы подберем
+          программу питания для вашего кота
+        </p>
+        <form class="questionnaire__data data" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="data__parameters parameters">
+            <ul class="parameters__list">
+              <li class="parameters__item">
+                <label class="data__label" for="cat-name">Имя:*</label>
+                <input class="data__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
+              </li>
+              <li class="parameters__item">
+                <label class="data__label" for="cat-weight">Вес:*</label>
+                <input class="data__input" id="cat-weight" type="number" name="cat-weight" placeholder="7" required>
+              </li>
+              <li class="parameters__item">
+                <label class="data__label" for="cat-age">Возраст(лет):</label>
+                <input class="data__input" id="cat-age" type="number" name="cat-age" placeholder="7">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="data__purpose purpose">
+            <ul class="purpose__list">
+              <li class="purpose__item">
+                <input class="data__radio" type="radio" name="purpose" value="weight-lose" id="weight-lose">
+                <label class="data__label data__label--right" for="weight-lose">Похудение</label>
+              </li>
+              <li class="purpose__item">
+                <input class="data__radio" type="radio" name="purpose" value="weight-gain" id="weight-gain">
+                <label class="data__label data__label--right" for="weight-gain">Набор массы</label>
+              </li>
+              <li class="purpose__item">
+                <input class="data__radio" type="radio" name="purpose" value="advice" id="advice">
+                <label class="data__label data__label--right" for="advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="data__owner owner">
+            <legend class="data__legend">Контактные данные (владельца кота)</legend>
+            <ul class="owner__list">
+              <li class="owner__item">
+                <label class="data__label" for="email">E-MAIL:*</label>
+                <input class="data__input data__input--email" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </li>
+              <li class="owner__item">
+                <label class="data__label" for="tel">Телефон:*</label>
+                <input class="data__input data__input--tel" id="tel" type="tel" name="tel" placeholder="7" required>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="data__comment">
+            <legend class="data__legend">Комментрий</legend>
+            <label class="visually-hidden" for="data__comment">Поле для ввода комментария</label>
+            <textarea class="data__comment" name="data__comment" id="data__comment" cols="30" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+
+          <fieldset class="data__optional optional">
+            <legend class="data__legend">Дополнительно</legend>
+            <ul class="optional__list">
+              <li class="optional__item">
+                <input class="data__checkbox" type="checkbox" name="sweetener" id="sweetener">
+                <label class="data__label data__label--right" for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="optional__item">
+                <input class="data__checkbox" type="checkbox" name="water" id="water">
+                <label class="data__label data__label--right" for="water">Питьевая вода</label>
+              </li>
+              <li class="optional__item">
+                <input class="data__checkbox" type="checkbox" name="milk" id="milk">
+                <label class="data__label data__label--right" for="milk">Молоко</label>
+              </li>
+              <li class="optional__item">
+                <input class="data__checkbox" type="checkbox" name="vitamins" id="vitamins">
+                <label class="data__label data__label--right" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button data__button" type="submit">Отправить заявку</button>
+          <p class="questionnaire__comment">* — Обязательные поля</p>
+        </form>
+      </section>
+    </main>
+
+    @@include("html_components/footer.html", {
+      "index": 'href="index.html"'
+    })
+  </body>
+</html>
