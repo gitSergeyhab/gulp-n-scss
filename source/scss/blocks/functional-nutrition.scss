@@ -1,0 +1,47 @@
+.functional-nutrition {
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+.functional-nutrition__color-wrapper {
+  height: 302px;
+  width: 100%;
+  background-image: url('../img/some/model-cat.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $basic-white;
+  background-color: $dark-gray;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 302px;
+    background-color: rgba($basic-green, 0.85);
+  }
+}
+
+.functional-nutrition__title,
+.functional-nutrition__text {
+  z-index: 1;
+}
+
+.functional-nutrition__drop-food {
+  z-index: 1;
+}
+
+.functional-nutrition__nocolor-wrapper {
+  background-color: $basic-white;
+  min-height: 178px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

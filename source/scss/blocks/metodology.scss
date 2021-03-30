@@ -1,0 +1,54 @@
+// .metodology {
+//
+// }
+.metodology__title {
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.metodology__list {
+  list-style: none;
+  padding-left: 80px;
+  margin: 0;
+
+}
+
+.metodology__item {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  margin-bottom: 20px;
+  position: relative;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    left: -80px;
+  }
+
+  &::before {
+    background-color: $basic-green;
+  }
+
+
+  &::after {
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+  }
+
+  &:first-child::after {
+    background-image: url("../img/how_working/icon_leaf.svg");
+  }
+  &:nth-child(2)::after {
+    background-image: url("../img/how_working/icon_tub.svg");
+  }
+  &:nth-child(3)::after {
+    background-image: url("../img/how_working/icon_eat.svg");
+  }
+  &:last-child::after {
+    background-image: url("../img/how_working/icon_alarm.svg");
+  }
+}

@@ -1,0 +1,15 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 320px;
+}
+
+.page-main__metodology,
+.page-main__purpose {
+  width: 100%;
+  min-width: 320px;
+  padding: 20px;
+  background-color: $basic-white;
+  box-sizing: border-box;
+}

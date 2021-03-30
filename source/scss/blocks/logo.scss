@@ -1,0 +1,13 @@
+.logo {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  width: 190px;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}

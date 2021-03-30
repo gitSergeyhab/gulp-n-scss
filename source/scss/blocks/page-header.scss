@@ -1,0 +1,39 @@
+.page-header {
+  width: 100%;
+  min-width: 320px;
+  background-color: $basic-white;
+  padding: 17px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+@mixin line {
+  height: 1.5px;
+  width: 24px;
+  background-color: $basic-black;
+}
+
+.page-header__nav-toggle {
+  @include line;
+  border: none;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6.5px;
+    left: 0;
+    @include line;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6.5px;
+    left: 0;
+    @include line;
+
+  }
+}

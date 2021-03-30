@@ -20,13 +20,13 @@
     <div class="contacts__socials socials">
       <ul class="socials__list">
         <li class="socials__item">
-          <a class="socials__link socials__link--vk" href="#" aria-label="ссылка Вконтакте">vk</a>
+          <a class="socials__link socials__link--vk" href="#" aria-label="ссылка Вконтакте"></a>
         </li>
         <li class="socials__item">
-          <a class="socials__link socials__link--ig" href="#" aria-label="ссылка Инстаграмм">ig</a>
+          <a class="socials__link socials__link--ig" href="#" aria-label="ссылка Инстаграмм"></a>
         </li>
         <li class="socials__item">
-          <a class="socials__link socials__link--fb" href="#" aria-label="ссылка Фэйсбук">fb</a>
+          <a class="socials__link socials__link--fb" href="#" aria-label="ссылка Фэйсбук"></a>
         </li>
       </ul>
     </div>
@@ -40,3 +40,12 @@
     </div>
   </section>
 </footer>
+<script>
+  const links = document.querySelectorAll('.site-list__item a');
+  links.forEach(link => {
+    link.parentNode.classList.remove('site-list__item--current');
+    if(!link.href) {
+      link.parentNode.classList.add('site-list__item--current');
+    }
+  })
+</script>
