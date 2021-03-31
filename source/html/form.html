@@ -26,7 +26,7 @@
                 <input class="data__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
               </li>
               <li class="parameters__item">
-                <label class="data__label" for="cat-weight">Вес:*</label>
+                <label class="data__label" for="cat-weight">Вес(кг):*</label>
                 <input class="data__input" id="cat-weight" type="number" name="cat-weight" placeholder="7" required>
               </li>
               <li class="parameters__item">
@@ -36,25 +36,27 @@
             </ul>
           </fieldset>
 
-          <fieldset class="data__purpose purpose">
-            <ul class="purpose__list">
-              <li class="purpose__item">
-                <input class="data__radio" type="radio" name="purpose" value="weight-lose" id="weight-lose">
-                <label class="data__label data__label--right" for="weight-lose">Похудение</label>
+          <fieldset class="data__purpose purposes">
+            <ul class="purposes__list">
+              <li class="purposes__item">
+                <input class="purposes__radio" type="radio" name="purpose" value="weight-lose" id="weight-lose">
+                <label class="data__label purposes__label" for="weight-lose">Похудение</label>
               </li>
-              <li class="purpose__item">
-                <input class="data__radio" type="radio" name="purpose" value="weight-gain" id="weight-gain">
-                <label class="data__label data__label--right" for="weight-gain">Набор массы</label>
+              <li class="purposes__item">
+                <input class="purposes__radio" type="radio" name="purpose" value="weight-gain" id="weight-gain">
+                <label class="data__label
+                purposes__label" for="weight-gain">Набор массы</label>
               </li>
-              <li class="purpose__item">
-                <input class="data__radio" type="radio" name="purpose" value="advice" id="advice">
-                <label class="data__label data__label--right" for="advice">Не знаю (Нужен ваш совет)</label>
+              <li class="purposes__item">
+                <input class="purposes__radio" type="radio" name="purpose" value="advice" id="advice">
+                <label class="data__label purposes__label" for="advice">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="data__owner owner">
-            <legend class="data__legend">Контактные данные (владельца кота)</legend>
+            <!-- <legend class="data__legend title-green-line">Контактные данные (владельца кота)</legend> -->
+            <div class="data__legend title-green-line">Контактные данные (владельца кота)</div>
             <ul class="owner__list">
               <li class="owner__item">
                 <label class="data__label" for="email">E-MAIL:*</label>
@@ -67,14 +69,17 @@
             </ul>
           </fieldset>
 
-          <fieldset class="data__comment">
-            <legend class="data__legend">Комментрий</legend>
+          <fieldset class="data__comment comment">
+            <!-- <legend class="data__legend title-green-line">Комментрий</legend> -->
+            <div class="data__legend title-green-line">Комментрий</div>
             <label class="visually-hidden" for="data__comment">Поле для ввода комментария</label>
-            <textarea class="data__comment" name="data__comment" id="data__comment" cols="30" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="comment__field" name="data__comment" id="data__comment" cols="30" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="data__optional optional">
-            <legend class="data__legend">Дополнительно</legend>
+            <!-- <legend class="data__legend">Дополнительно</legend> -->
+            <div class="data__legend title-green-line">Дополнительно</div>
+
             <ul class="optional__list">
               <li class="optional__item">
                 <input class="data__checkbox" type="checkbox" name="sweetener" id="sweetener">
@@ -94,8 +99,11 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button data__button" type="submit">Отправить заявку</button>
-          <p class="questionnaire__comment">* — Обязательные поля</p>
+          <div class="data__button-field button-field">
+            <button class="button button-field__button" type="submit">Отправить заявку</button>
+            <p class="button-field__comment">* — Обязательные поля</p>
+          </div>
+
         </form>
       </section>
     </main>

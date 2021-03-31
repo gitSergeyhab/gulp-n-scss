@@ -6,23 +6,38 @@
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
 
-
-@import "blocks/slider.scss";
-
 @import "blocks/page-main.scss";
+
+//index
 @import "blocks/functional-nutrition.scss";
 @import "blocks/purpose.scss";
 @import "blocks/metodology.scss";
 @import "blocks/example.scss";
 @import "blocks/cat-slider.scss";
 
+// catalog
+@import "blocks/main-catalog.scss";
+@import "blocks/product-card.scss";
+@import "blocks/specification-table.scss";
+@import "blocks/additional-catalog.scss";
+@import "blocks/additional-card.scss";
+
+// form
+@import "blocks/questionnaire.scss";
+@import "blocks/data.scss";
+
+@import "blocks/parameters.scss";
+@import "blocks/purposes.scss";
+@import "blocks/owner.scss";
+@import "blocks/comment.scss";
+@import "blocks/optional.scss";
+@import "blocks/button-field.scss";
 
 
 
 
 
-
-
+@import "blocks/title-green-line.scss";
 
 
 

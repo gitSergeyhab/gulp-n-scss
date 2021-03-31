@@ -1,0 +1,21 @@
+.title-green-line {
+
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+
+
+  display: flex;
+  &::after {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: $basic-green;
+    margin-top: 17px;
+    flex-grow: 1;
+    margin-left: 14px;
+
+  }
+}

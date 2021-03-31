@@ -1,0 +1,55 @@
+.purposes {
+  margin: 0;
+  padding: 0;
+  padding-top: 28px;
+}
+
+.purposes__list {
+  margin: 0;
+  margin-bottom: 7px;
+}
+.purposes__item {
+  margin-bottom: 24px;
+}
+
+.purposes__label {
+    padding-left: 46px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 30px;
+      border: 1px solid $third-gray;
+      box-sizing: border-box;
+      border-radius: 50%;
+      top: -5px;
+      left: 0;
+    }
+    // &:checked::after {
+    //   position: absolute;
+    //   content: "";
+    //   width: 13.5px;
+    //   height: 13.5px;
+    //   background-color: $basic-green;
+    //   border-radius: 50%;
+    //   top: -5px;
+    //   left: 0;
+    // }
+}
+
+.purposes__radio:checked ~ .purposes__label::after {
+  position: absolute;
+  content: "";
+  width: 13.5px;
+  height: 13.5px;
+  background-color: $basic-green;
+  border-radius: 50%;
+  top: 3px;
+  left: 8px;
+}
+
+
+.purposes__radio {
+  @include hidden-mix();
+}

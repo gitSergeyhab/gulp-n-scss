@@ -1,0 +1,20 @@
+.additional-card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+
+.additional-card__title {
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.additional-card__portion-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  & p {
+    margin: 0;
+  }
+}

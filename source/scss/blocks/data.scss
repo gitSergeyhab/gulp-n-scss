@@ -1,0 +1,33 @@
+.data {
+  display: flex;
+  flex-direction: column;
+}
+
+.data__label {
+  text-transform: uppercase;
+}
+
+.data__legend {
+  margin-right: -20px;
+
+}
+
+.data__parameters {
+  margin-bottom: 24px;
+
+}
+
+.data__input {
+  flex-grow: 1;
+  margin-left: 16px;
+  width: 100px;
+  &--tel,
+  &--email {
+    margin-left: 11px;
+  }
+}
+
+.data__radio,
+.data__checkbox {
+  @include hidden-mix();
+}
